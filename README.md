@@ -2,6 +2,10 @@
 
 The missing `watch` for `@vue/reactivity`. Works without Vue.
 
+[![npm](https://img.shields.io/npm/v/@vue-reactivity/watch)](https://www.npmjs.com/package/@vue-reactivity/watch)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@vue-reactivity/watch)](https://bundlephobia.com/result?p=@vue-reactivity/watch)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/antfu/vue-reactivity-watch/Test)
+
 ## Install
 
 ```bash
