@@ -14,17 +14,36 @@
     "src"
   ],
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsup src/index.ts --format cjs,esm,iife --dts",
-    "dev": "npm run build -- --watch"
+    "dev": "npm run build -- --watch",
+    "test": "c8 ava",
+    "release": "npx bumpp --tag --commit --push && pnpm publish --access public"
   },
   "peerDependencies": {
-    "@vue/reactivity": ">=3.0.0-rc.1"
+    "@vue/reactivity": ">=3.0.0-rc.1",
+    "@vue/shared": ">=3.0.0-rc.1"
   },
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.3.3",
+    "@types/node": "^14.11.1",
     "@vue/reactivity": "^3.0.0-rc.12",
+    "@vue/shared": "^3.0.0-rc.12",
+    "ava": "^3.12.1",
+    "c8": "^7.3.0",
+    "esbuild-register": "^1.0.2",
     "eslint": "^7.9.0",
+    "esm": "^3.2.25",
     "tsup": "^3.7.0",
     "typescript": "^4.0.2"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "esm",
+      "esbuild-register"
+    ]
   }
 }
