@@ -1,0 +1,30 @@
+{
+  "name": "@vue-reactivity/watch",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.global.js",
+  "jsdelivr": "dist/index.global.js",
+  "repository": "https://github.com/antfu/vue-reactivity-watch.git",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm,iife --dts",
+    "dev": "npm run build -- --watch"
+  },
+  "peerDependencies": {
+    "@vue/reactivity": ">=3.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config-ts": "^0.3.3",
+    "@vue/reactivity": "^3.0.0-rc.12",
+    "eslint": "^7.9.0",
+    "tsup": "^3.7.0",
+    "typescript": "^4.0.2"
+  }
+}
