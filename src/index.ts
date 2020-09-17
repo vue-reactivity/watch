@@ -1,3 +1,5 @@
+// ported from https://github.com/vuejs/vue-next/blob/master/packages/runtime-core/src/apiWatch.ts by Evan You
+
 import { ComputedRef, effect, Ref, ReactiveEffectOptions, isReactive, isRef, stop } from '@vue/reactivity'
 import { hasChanged, isArray, isFunction, isObject, NOOP } from '@vue/shared'
 import { warn, callWithErrorHandling, callWithAsyncErrorHandling } from './errorHandling'

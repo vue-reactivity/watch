@@ -1,5 +1,5 @@
-import { reactive, ref } from '@vue/reactivity'
 import test from 'ava'
+import { reactive, ref } from '@vue/reactivity'
 import { watch, watchEffect } from '../src'
 
 test('should work', (t) => {
