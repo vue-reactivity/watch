@@ -1,24 +1,25 @@
-<h2 align='center'><samp>@vue-reactivity/watch</samp></h2>
-
 <p align='center'>
-The missing <kbd>watch</kbd> for <a href="https://github.com/vuejs/vue-next/tree/master/packages/reactivity"><code>@vue/reactivity</code></a>. Works without Vue.</p>
-
-<p align='center'>
-  <a href="https://www.npmjs.com/package/@vue-reactivity/watch"><img src="https://img.shields.io/npm/v/@vue-reactivity/watch" alt="npm"></a>
-  <a href="https://bundlephobia.com/result?p=@vue-reactivity/watch"><img src="https://img.shields.io/bundlephobia/minzip/@vue-reactivity/watch?label=minzip" alt="npm bundle size"></a>
-  <img src="https://img.shields.io/github/workflow/status/antfu/vue-reactivity-watch/Test" alt="GitHub Workflow Status">
+<img src='https://github.com/vue-reactivity/art/blob/master/svg/package-watch.svg?raw=true' height='250'>
 </p>
 
 <p align='center'>
-  <em>want to write one on your own? Check out <a href='https://antfu.me/posts/watch-with-reactivity/'>this blog post</a></em>
+The (missing) <kbd>watch</kbd> for <a href="https://github.com/vuejs/vue-next/tree/master/packages/reactivity"><code>@vue/reactivity</code></a>. Works without Vue.</p>
+
+<p align='center'>
+  <a href="https://www.npmjs.com/package/@vue-reactivity/watch"><img src="https://img.shields.io/npm/v/@vue-reactivity/watch?color=43b883&label=" alt="npm"></a>
+  <a href="https://bundlephobia.com/result?p=@vue-reactivity/watch"><img src="https://img.shields.io/bundlephobia/minzip/@vue-reactivity/watch?color=364a5e&label=" alt="npm bundle size"></a>
+</p>
+
+<p align='center'>
+  <em>want to now how it works or write one on your own? Check out <a href='https://antfu.me/posts/watch-with-reactivity/'>this blog post</a></em>
 </p>
 
 
 ## Install
 
-```bash
-npm i @vue-reactivity/watch
-```
+<pre>
+npm i @vue-reactivity/<b>watch</b>
+</pre>
 
 ### Usage
 
