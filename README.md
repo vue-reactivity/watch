@@ -23,7 +23,7 @@ npm i @vue-reactivity/<b>watch</b>
 
 ### Usage
 
-> Note: since there is no Vue instance to be bond, `watch` will not be auto disposed. You need to always **explicitly** call the returning function to stop it.
+> Note: since there is no Vue instance to be bond, `watch` will **NOT** be auto disposed. You need to always **explicitly** call the returning function to stop it. Or you can try [@vue-reactivity/scope](https://github.com/vue-reactivity/scope) which will auto collect the effects for you. 
 
 Just like what you do in Vue.
 
