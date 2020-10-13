@@ -35,7 +35,10 @@ const invoke = (fn: Function) => fn()
 const INITIAL_WATCHER_VALUE = {}
 
 export interface WatchOptionsBase {
-  flush?: 'sync' // only accept sync
+  /**
+   * @depreacted ignored in `@vue-reactivity/watch` and will always be `sync`
+   */
+  flush?: 'sync' | 'pre' | 'post'
   onTrack?: ReactiveEffectOptions['onTrack']
   onTrigger?: ReactiveEffectOptions['onTrigger']
 }
