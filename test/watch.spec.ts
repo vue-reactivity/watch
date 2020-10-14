@@ -37,6 +37,22 @@ test('should work with deep reactive', (t) => {
   stop()
 })
 
+test('should work with array reactive', (t) => {
+  let triggered = 0
+  const array = reactive<any>([1])
+
+  const stop = watch(array, () => {
+    triggered += 1
+  })
+
+  array.push(2)
+  t.is(triggered, 1)
+  array[2] = 3
+  t.is(triggered, 2)
+
+  stop()
+})
+
 test('should work with watchEffect', (t) => {
   let sync = -1
   const counter = ref(0)
