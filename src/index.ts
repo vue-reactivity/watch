@@ -101,7 +101,7 @@ function doWatch(
   { immediate, deep, onTrack, onTrigger }: WatchOptions = {},
 ): WatchStopHandle {
   let getter: () => any
-  if (isArray(source)) {
+  if (isArray(source) && !isReactive(source)) {
     getter = () =>
       // eslint-disable-next-line array-callback-return
       source.map((s) => {
